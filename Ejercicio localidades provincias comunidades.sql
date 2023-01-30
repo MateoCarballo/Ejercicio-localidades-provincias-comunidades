@@ -48,7 +48,7 @@ add constraint FK_localidades_provincias foreign key (n_provincia) 		references 
 
 alter table provincias
 add constraint 	FK_provincias_localidades foreign key (id_capital) 		references localidades(id_localidad),
-add constraint	FK_provincias_comunidades foreign key (id_comunidad)	references comunidades(id_comunidad);
+add constraint	FK_provincias_comunidades foreign key (id_comunidad)	        references comunidades(id_comunidad);
 
 alter table comunidades
 add constraint FK_comunidades_localidades foreign key (id_capital)		references localidades(id_localidad);
